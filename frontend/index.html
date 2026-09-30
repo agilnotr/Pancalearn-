@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PancaLearn — Belajar Pancasila dengan Cara yang Lebih Interaktif</title>
+<meta name="description" content="PancaLearn adalah platform pembelajaran Pancasila interaktif dengan materi, studi kasus, quiz, challenge, dan AI Learning Assistant PancaAI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/navbar.css" />
+<link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="css/team.css" />
+<link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+<div id="navbar-mount"></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="eyebrow">Interactive Pancasila Learning Platform</span>
+        <h1>Belajar Pancasila dengan Cara yang Lebih Interaktif.</h1>
+        <p>Pahami nilai-nilai Pancasila melalui materi singkat, studi kasus, quiz, challenge, dan bantuan AI.</p>
+        <div class="hero-actions">
+          <a href="pages/materi.html" class="btn btn-primary">Mulai Belajar</a>
+          <a href="pages/pancai.html" class="btn btn-secondary">Tanya PancaAI</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"><img src="assets/garuda-pancasila.png" alt="Garuda Pancasila"></div>
+    </div>
+  </section>
+
+  <!-- 5 SILA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Nilai Dasar Bangsa</span>
+        <h2>5 Sila Pancasila</h2>
+        <p>Klik salah satu sila untuk melihat penjelasan lebih lanjut.</p>
+      </div>
+      <div class="sila-grid" id="sila-grid"></div>
+      <div class="sila-detail" id="sila-detail"></div>
+    </div>
+  </section>
+
+  <!-- STATISTICS -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div>
+        <div class="stat-number" data-counter="10" data-suffix="+">0</div>
+        <div class="stat-label">Materi</div>
+      </div>
+      <div>
+        <div class="stat-number" data-counter="20" data-suffix="+">0</div>
+        <div class="stat-label">Studi Kasus</div>
+      </div>
+      <div>
+        <div class="stat-number" data-counter="15" data-suffix="+">0</div>
+        <div class="stat-label">Challenge</div>
+      </div>
+      <div>
+        <div class="stat-number">AI</div>
+        <div class="stat-label">Learning Assistant</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PANCALEARN -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Kenapa PancaLearn</span>
+        <h2>Belajar Pancasila Jadi Lebih Mudah</h2>
+      </div>
+      <div class="grid grid-5">
+        <div class="card reveal-on-scroll">
+          <div class="feature-icon">📘</div>
+          <h3>Materi Ringkas</h3>
+          <p>Belajar Pancasila dengan materi yang singkat dan mudah dipahami.</p>
+        </div>
+        <div class="card reveal-on-scroll">
+          <div class="feature-icon">🧩</div>
+          <h3>Studi Kasus</h3>
+          <p>Pahami penerapan Pancasila melalui situasi kehidupan nyata.</p>
+        </div>
+        <div class="card reveal-on-scroll">
+          <div class="feature-icon">❓</div>
+          <h3>Quiz Interaktif</h3>
+          <p>Uji pemahaman dengan pertanyaan yang menarik.</p>
+        </div>
+        <div class="card reveal-on-scroll">
+          <div class="feature-icon">🎯</div>
+          <h3>Challenge</h3>
+          <p>Bangun kebiasaan belajar melalui berbagai tantangan.</p>
+        </div>
+        <div class="card reveal-on-scroll">
+          <div class="feature-icon">🤖</div>
+          <h3>PancaAI</h3>
+          <p>Tanyakan materi Pancasila kepada AI Learning Assistant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background:var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Alur Belajar</span>
+        <h2>How It Works</h2>
+      </div>
+      <div class="flow-grid">
+        <div class="card flow-step reveal-on-scroll"><div class="step-num">01</div><h3>Pelajari Materi</h3></div>
+        <div class="card flow-step reveal-on-scroll"><div class="step-num">02</div><h3>Hadapi Studi Kasus</h3></div>
+        <div class="card flow-step reveal-on-scroll"><div class="step-num">03</div><h3>Kerjakan Quiz</h3></div>
+        <div class="card flow-step reveal-on-scroll"><div class="step-num">04</div><h3>Dapatkan XP</h3></div>
+        <div class="card flow-step reveal-on-scroll"><div class="step-num">05</div><h3>Naik Level</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED MATERI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Materi Pilihan</span>
+        <h2>Featured Materi</h2>
+      </div>
+      <div class="featured-row" id="featured-materi"></div>
+      <div class="text-center" style="margin-top:28px;">
+        <a href="pages/materi.html" class="btn btn-secondary">Lihat Semua Materi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STUDI KASUS -->
+  <section class="section" style="background:var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Studi Kasus Pilihan</span>
+        <h2>Featured Studi Kasus</h2>
+      </div>
+      <div class="featured-row" id="featured-kasus"></div>
+      <div class="text-center" style="margin-top:28px;">
+        <a href="pages/studi-kasus.html" class="btn btn-secondary">Lihat Semua Studi Kasus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANCAAI PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">AI Learning Assistant</span>
+        <h2>Kenalan dengan PancaAI</h2>
+      </div>
+      <div class="ai-preview">
+        <div>
+          <h3>Tanya apa saja tentang Pancasila</h3>
+          <p>PancaAI siap membantu menjelaskan makna sila, memberi contoh penerapan, membuatkan quiz, hingga menganalisis studi kasus — kapan saja kamu butuh.</p>
+          <a href="pages/pancai.html" class="btn btn-primary">Tanya PancaAI</a>
+        </div>
+        <div class="ai-chat-mock">
+          <div class="user-bubble">Apa makna sila ke-3?</div>
+          <div class="ai-bubble">Sila ketiga, Persatuan Indonesia, menekankan pentingnya menjaga persatuan dan kesatuan bangsa di tengah keberagaman suku, agama, dan budaya. 🇮🇩</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="final-cta">
+        <h2>Siap memahami Pancasila dengan cara yang berbeda?</h2>
+        <p>Mulai perjalanan belajar kamu bersama PancaLearn.</p>
+        <a href="pages/materi.html" class="btn btn-primary">Mulai Belajar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Tim Pengembang</span>
+        <h2>Meet the Team</h2>
+        <p>PancaLearn dikembangkan oleh tim mahasiswa Teknik Informatika sebagai bagian dari project mata kuliah Pancasila.</p>
+      </div>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // ---- Sila cards ----
+  const silaGrid = document.getElementById('sila-grid');
+  const silaDetail = document.getElementById('sila-detail');
+  silaGrid.innerHTML = SILA_DATA.map((s, i) => `
+    <div class="card sila-card reveal-on-scroll" data-index="${i}">
+      <div class="sila-number">${s.number}</div>
+      <div class="sila-icon">${s.icon}</div>
+      <h3>${s.title}</h3>
+    </div>
+  `).join('');
+
+  silaGrid.querySelectorAll('.sila-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      const s = SILA_DATA[card.getAttribute('data-index')];
+      silaDetail.innerHTML = `<h3>${s.icon} Sila ${s.number}: ${s.title}</h3><p>${s.detail}</p>`;
+      silaDetail.classList.add('open');
+      silaDetail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  });
+
+  // ---- Featured Materi ----
+  document.getElementById('featured-materi').innerHTML = MATERI_DATA.slice(0, 3).map((m) => `
+    <div class="card reveal-on-scroll">
+      <div class="feature-icon">${m.icon}</div>
+      <h3>${m.title}</h3>
+      <p>${m.description}</p>
+      <span class="caption">⏱ ${m.readingTime} menit baca</span><br/><br/>
+      <a href="pages/detail-materi.html?id=${m.id}" class="btn btn-secondary btn-block">Pelajari</a>
+    </div>
+  `).join('');
+
+  // ---- Featured Studi Kasus ----
+  document.getElementById('featured-kasus').innerHTML = STUDI_KASUS_DATA.slice(0, 3).map((c) => `
+    <div class="card reveal-on-scroll">
+      <span class="badge badge-primary">${c.topic}</span>
+      <h3 style="margin-top:12px; font-size:1rem;">${c.question}</h3>
+      <a href="pages/studi-kasus.html" class="btn btn-secondary btn-block" style="margin-top:12px;">Coba Sekarang</a>
+    </div>
+  `).join('');
+
+  // ---- Team ----
+  document.getElementById('team-grid').innerHTML = TEAM_DATA.map((t) => `
+    <div class="card team-card reveal-on-scroll">
+      <div class="team-avatar">${t.initials}</div>
+      <h3>${t.name}</h3>
+      <span class="team-role">${t.role}</span>
+      <p>${t.desc}</p>
+    </div>
+  `).join('');
+
+  animateCounters();
+  initReveal();
+</script>
+</body>
+</html>

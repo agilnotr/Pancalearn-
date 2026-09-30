@@ -1,0 +1,26 @@
+.kasus-wrap { max-width: 720px; margin: 0 auto; }
+.kasus-progress-label { display:flex; justify-content:space-between; font-size:0.85rem; color:var(--text-secondary); margin-bottom: 8px; }
+.kasus-card { padding: 32px; }
+.kasus-question { font-size: 1.1rem; color: var(--text-primary); font-weight: 600; margin-bottom: 20px; }
+.kasus-options { display: flex; flex-direction: column; gap: 12px; }
+.kasus-options button {
+  text-align: left;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+  font-size: 0.92rem;
+}
+.kasus-options button:hover:not(:disabled) { border-color: var(--primary); }
+.kasus-options button.correct { border-color: var(--success); background: var(--success-bg); }
+.kasus-options button.wrong { border-color: var(--danger); background: var(--danger-bg); }
+.kasus-feedback { margin-top: 20px; padding: 18px; border-radius: var(--radius-md); display: none; }
+.kasus-feedback.show { display: block; }
+.kasus-feedback.feedback-correct { background: var(--success-bg); }
+.kasus-feedback.feedback-wrong { background: var(--danger-bg); }
+.kasus-feedback h4 { margin: 0 0 8px; }
+.kasus-nav { display: flex; justify-content: space-between; margin-top: 24px; }
+.kasus-finished { text-align: center; padding: 48px 24px; }

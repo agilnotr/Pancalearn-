@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Materi Pancasila — PancaLearn</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/navbar.css" />
+<link rel="stylesheet" href="../css/materi.css" />
+<link rel="stylesheet" href="../css/footer.css" />
+</head>
+<body>
+
+<div id="navbar-mount"></div>
+
+<main>
+  <section class="page-header container">
+    <span class="eyebrow">Belajar Terstruktur</span>
+    <h1>Materi Pancasila</h1>
+    <p>Pilih materi yang ingin kamu pelajari. Setiap materi dilengkapi ringkasan, contoh nyata, dan mini quiz.</p>
+  </section>
+
+  <section class="container">
+    <div class="materi-toolbar">
+      <input type="text" id="materi-search" placeholder="Cari materi..." aria-label="Cari materi" />
+      <select id="materi-filter" aria-label="Filter status materi">
+        <option value="all">Semua Materi</option>
+        <option value="done">Sudah Selesai</option>
+        <option value="todo">Belum Dipelajari</option>
+      </select>
+    </div>
+    <div class="materi-grid" id="materi-grid"></div>
+    <div class="empty-state hidden" id="materi-empty">Materi tidak ditemukan. Coba kata kunci lain.</div>
+  </section>
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="../js/data.js"></script>
+<script src="../js/state.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/materi.js"></script>
+</body>
+</html>

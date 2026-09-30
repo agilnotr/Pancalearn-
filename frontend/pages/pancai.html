@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PancaAI — PancaLearn</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/navbar.css" />
+<link rel="stylesheet" href="../css/pancai.css" />
+<link rel="stylesheet" href="../css/footer.css" />
+</head>
+<body>
+
+<div id="navbar-mount"></div>
+
+<main>
+  <section class="container pancai-wrap" style="padding-top:48px;">
+    <div class="pancai-header">
+      <div>
+        <span class="eyebrow">AI Learning Assistant</span>
+        <h1 style="margin:0;">PancaAI</h1>
+        <p style="margin:4px 0 0;">AI Learning Assistant untuk membantu kamu memahami Pancasila.</p>
+      </div>
+      <button class="btn btn-ghost" id="clear-chat-btn">🗑️ Clear Chat</button>
+    </div>
+
+    <div class="chat-context-banner hidden" id="context-banner"></div>
+
+    <div class="quick-prompts" id="quick-prompts"></div>
+
+    <div class="chat-window" id="chat-window"></div>
+
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" placeholder="Tulis pertanyaanmu tentang Pancasila..." autocomplete="off" aria-label="Tulis pertanyaan untuk PancaAI" />
+      <button type="submit" class="btn btn-primary" id="send-btn">Kirim</button>
+    </form>
+  </section>
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="../js/data.js"></script>
+<script src="../js/state.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/pancai.js"></script>
+</body>
+</html>

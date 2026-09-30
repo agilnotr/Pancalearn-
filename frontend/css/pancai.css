@@ -1,0 +1,60 @@
+.pancai-wrap { max-width: 760px; margin: 0 auto; }
+.pancai-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
+.quick-prompts { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.quick-prompt-btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+.quick-prompt-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+.chat-window {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  height: 480px;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+}
+.chat-bubble { max-width: 80%; padding: 12px 16px; border-radius: 14px; font-size: 0.9rem; line-height: 1.5; white-space: pre-wrap; }
+.chat-bubble.ai { background: var(--surface-alt); align-self: flex-start; border-bottom-left-radius: 4px; }
+.chat-bubble.user { background: var(--primary); color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+.chat-bubble.typing { display:flex; gap:4px; align-items:center; }
+.chat-bubble.typing span { width:6px; height:6px; border-radius:50%; background: var(--text-secondary); display:inline-block; animation: pulse 1s infinite; }
+.chat-bubble.typing span:nth-child(2) { animation-delay: 0.2s; }
+.chat-bubble.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+.chat-input-row { display: flex; gap: 10px; margin-top: 16px; }
+.chat-input-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+}
+.chat-input-row #send-btn { flex-shrink: 0; }
+.chat-context-banner {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .chat-window { height: 60vh; }
+  .chat-bubble { max-width: 92%; }
+}

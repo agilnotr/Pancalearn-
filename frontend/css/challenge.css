@@ -1,0 +1,5 @@
+.challenge-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.challenge-card { display: flex; flex-direction: column; gap: 12px; }
+.challenge-card.completed { opacity: 0.7; }
+.challenge-reward { font-weight: 700; color: var(--primary); }
+@media (max-width: 720px) { .challenge-grid { grid-template-columns: 1fr; } }

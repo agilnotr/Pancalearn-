@@ -1,0 +1,35 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.team-grid .team-card:nth-child(4) { grid-column: 1 / span 1.5; }
+.team-card {
+  text-align: center;
+}
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+}
+.team-card:hover .team-avatar { transform: scale(1.08); }
+.team-card h3 { margin-bottom: 2px; font-size: 1.05rem; }
+.team-role { color: var(--primary); font-weight: 600; font-size: 0.85rem; margin-bottom: 10px; display: block; }
+.team-card p { font-size: 0.85rem; margin-bottom: 0; }
+
+@media (max-width: 860px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid .team-card:nth-child(4) { grid-column: auto; }
+}
+@media (max-width: 560px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
